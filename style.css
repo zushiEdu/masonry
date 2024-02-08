@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column{
+    width: 30%;
+}
+
+.columnHolder{
+    display:inline-flex;
+    justify-content:center;
+    width: 80%;
+}
+
+.block{
+    background-color: white;
+    padding:0.5em;
+    margin-top: 1em;
+    margin-left: 1em;
+    word-wrap: break-word;      
+}
+
+p{
+    margin: 0;
+}
