@@ -1,28 +1,105 @@
+* {
+    font-family: Trebuchet MS, sans-serif	;
+}
+
 body{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.column{
-    width: 30%;
-}
-
-.columnHolder{
-    display:inline-flex;
-    justify-content:center;
-    width: 80%;
-}
-
-.block{
-    background-color: white;
-    padding:0.5em;
-    margin-top: 1em;
-    margin-left: 1em;
-    word-wrap: break-word;      
+    background-image: url("/Pictures/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-attachment: fixed;
+    width: 70%;
+    margin: auto;
 }
 
 p{
     margin: 0;
+}
+
+h1{
+    margin: 0;
+    margin-left: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+h2{
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+#column2{
+    margin-left: 1em;
+    margin-right:1em;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+
+.trim{
+    background-color: #F2F5F7;
+    height:100%;
+    margin-top:0;
+    padding-left: 1em;
+    padding-right:1em;
+}
+
+.header{
+    background-color: #F2F5F7;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.column{
+    width: 33.3vw;
+}
+
+.columnHolder{
+    display:inline-flex;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+.block{
+    background-color: lightgray;
+    box-shadow: inset 0 0 0.75em gray;
+
+    padding:1em;
+    margin-top: 1em;
+    word-wrap: break-word;    
+    border-radius: .5em;  
+}
+
+.doubleImage{
+    margin-top:1vh;
+    background-color: white;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;  
+}
+
+.postImage{
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+    border-radius: 0.25em;  
+    width: 100%;
+    height: 100%;
+}
+
+#postText{
+    position: absolute;
+    align-self: center;
+    max-width: 15vw;
+    border-radius: 0.25em;  
+}
+
+.postImage:hover{
+    opacity: 0.2;
 }
